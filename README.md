@@ -4,6 +4,7 @@
 vagrant global-status
 ```
 and enter to each by  vagrant ssh <Name of the VM>
+
 3.  Inside vagrant folder, private_key for all machines are availiable, connect to all with the
 
 NAT Network (10.0.2.x): Virtualization software often assigns IP addresses in the 10.0.2.x range to virtual machines using NAT. This allows VMs to access the internet via the host machine's IP address.
