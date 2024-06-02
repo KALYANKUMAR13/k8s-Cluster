@@ -9,7 +9,7 @@ and enter to each by  vagrant ssh <Name of the VM>
 NAT Network (10.0.2.x): Virtualization software often assigns IP addresses in the 10.0.2.x range to virtual machines using NAT. This allows VMs to access the internet via the host machine's IP address.
 Host-Only Network (192.168.56.x): IP addresses in this range are assigned to virtual machines for communication between the host and VMs without providing internet access.
 
-4. Generating ssh key  in master-1, so that we can have configure to other node in the cluster and access it using the master and we can transfer the files.
+4. Generating ssh key  in master-1(Consider any one as master initially, which communicates with all other nodes), so that we can have configure to other node in the cluster and access it using the master and we can transfer the files.
 ```
 ssh-copy-id <Username>@<IPAddress>
 ssh-copy-id vagrant@192.168.56.12
