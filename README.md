@@ -76,6 +76,21 @@ Security of Sensitive Data:
 Secrets: Kubernetes stores secrets (e.g., API keys, passwords, certificates) in etcd, its distributed key-value store. If etcd is compromised, unencrypted secrets can be easily accessed.
 Configuration Files: Configuration files may contain sensitive information that needs to be protected.
 
-9. Install k8s binaries
+ 9.Bootstrapping the etcd Cluster
+ ```
+https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/07-bootstrapping-etcd.md
+```
+Kubernetes components are stateless and store cluster state in etcd. In this lab you will bootstrap a two node etcd cluster and configure it for high availability and secure remote access.
+
+If you examine the command line arguments passed to etcd in its unit file, you should recognise some of the certificates and keys created in earlier sections of this course.
+RUn in all master nodes, 
+
+10. Install kube controlplane -k8s controller binaries in all master node, Kubernetes API Server, Scheduler, and Controller Manager are downloaded from the kubecontroller
+``` 
+https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/08-bootstrapping-kubernetes-controllers.md
+```
+
+12. 
+
 
 
