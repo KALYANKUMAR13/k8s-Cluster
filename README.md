@@ -28,3 +28,52 @@ sudo mv kubectl /usr/local/bin/
 kubectl version  --client
 ```
 The final command shows the version of kubectl
+
+-------------------------------------------------------------------------------------------------
+Seprate topic of USER mangement
+User in k8s = Private key + Digital Certificate, and presented to api
+By default, user will have admin privilage 
+To issus a Certificate signing requests
+
+openssl genrsa -out privatekey.pem 2048
+openssl req -new -key privatekey.pem -out output.csr
+
+
+Then create  CertificateSigningRequest yaml file and deploy it and approve the user, Then create Cluster role and Cluster role binding with particular user.
+
+kubectl auth can-i create pods --user=mark
+kubectl auth can-i create pods --as=mark
+
+if mark is not in the kubeconfig file, then the first command will not say yes, even though the user has permissions.
+If the user is not is kubeconfig file, use as 
+-------------------------------------------------------------------------------------------------------
+
+6. Generating CA for all components in k8s
+   ```
+https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md
+```
+Follow the steps and command to generate certificates
+
+
+
+kubeconfig file, all other components of k8s will communicate to API server with the help of kubeconfig file. Generating kubeconfig files for all other components, so that other components will able to communicate with APi server. We are configuring the Lb , so that other nodes while trying to communicate, it has support high availability the IP address(particular master)
+
+7.Generating the Data Encryption Config and Key for componets of k8s:
+```
+https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/05-kubernetes-configuration-files.md
+```
+Generate the kubeconfig files for the componets of k8s and distribute to particular servers -> master kubecong files i.e (admin.kubecofig,kube-controler-manger, kube-scheduler) to master nodes and worker kubeconfig files  i.e kubeproxy.
+
+In Kubernetes (k8s), data encryption is critical for securing sensitive information such as secrets, configuration files, and other confidential data stored within the cluster. The Data Encryption Configuration and Key are used to provide this encryption. Here's a breakdown of why this is needed and how it works:
+
+8.Why is Data Encryption Needed in Kubernetes?
+```
+https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/06-data-encryption-keys.md
+```
+Security of Sensitive Data:
+Secrets: Kubernetes stores secrets (e.g., API keys, passwords, certificates) in etcd, its distributed key-value store. If etcd is compromised, unencrypted secrets can be easily accessed.
+Configuration Files: Configuration files may contain sensitive information that needs to be protected.
+
+9. Install k8s binaries
+
+
