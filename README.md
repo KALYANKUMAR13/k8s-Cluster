@@ -90,7 +90,5 @@ RUn in all master nodes,
 https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/08-bootstrapping-kubernetes-controllers.md
 ```
 
-12. 
-
 
 
