@@ -4,3 +4,4 @@ Whenever, we enter command from CLI(kubectl commmands), this authenticates, and 
 
 Whenever we are deploying a manifest, it is authenticated by API server and information is updated in etcd, and then return to API server, The Scheduler continously monitors the API server and tells the Node to the API server and then the APi server updates the node information in the etcd and Then finally passes the information to the kubelet in the NOde.
 
+The kubelet tells the CRI to deploy the image, Once deployed, kubelet updates to APIserver, And API server updates the data to etcd.
