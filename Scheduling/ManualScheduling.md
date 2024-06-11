@@ -4,7 +4,7 @@ If we need to do after it is deployed, we need to create a bind-definition to it
 nodeName is the sibling of containers
 
 
-
+```
 ---
 apiVersion: v1
 kind: Pod
@@ -15,7 +15,7 @@ spec:
   -  image: nginx
      name: nginx
   nodeName: controlplane
-
+```
 
 ----
 kubectl get pods --selector bu=finance
