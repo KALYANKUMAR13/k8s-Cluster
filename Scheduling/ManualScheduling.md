@@ -19,3 +19,6 @@ spec:
 
 ----
 kubectl get pods --selector bu=finance
+
+
+If multiple things, we can add the selectors
