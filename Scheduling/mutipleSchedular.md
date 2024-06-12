@@ -20,3 +20,5 @@ Scheduling Plugins:
 4. Binding - defaultBinder
 
 Now, in one kubeScheduleConfiguration, we can give mutiple schedulers and its rules.
+
+![image](https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/7d566678-6751-4c11-97c5-37a25288d5f4)
