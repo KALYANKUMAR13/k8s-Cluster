@@ -58,9 +58,12 @@ ETCDCTL_API=3 etcdctl --endpoints=https://192.4.55.15:2379 --cacert=/etc/etcd/pk
 
 Step 3: Update the systemd service unit file for etcdby running vi /etc/systemd/system/etcd.service and add the new value for data-dir:
 Go to particular file update the directory
+
+Change the ownership of the directory 
 ```
 chown -R etcd:etcd /var/lib/etcd-data-new
 ```
+
 Finally restart the server
 ```
 systemctl daemon-reload 
