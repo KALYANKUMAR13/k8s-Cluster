@@ -48,3 +48,21 @@ The --data-dir is the place where we need to place the backup file,  so etcd wil
 
 Append the folder /var/lib/etcd-new in the Volume's path (Not in VolumeMount). So that folder is mounted to the 
 
+
+----------------------------------------------------------------------------
+
+Directly Updating on the etcd server
+
+ETCDCTL_API=3 etcdctl --endpoints=https://192.4.55.15:2379 --cacert=/etc/etcd/pki/ca.pem --cert=/etc/etcd/pki/etcd.pem --key=/etc/etcd/pki/etcd-key.pem snapshot restore /root/cluster2.db --data-dir /var/lib/etcd-data-new
+         
+
+Step 3: Update the systemd service unit file for etcdby running vi /etc/systemd/system/etcd.service and add the new value for data-dir:
+Go to particular file update the directory
+```
+chown -R etcd:etcd /var/lib/etcd-data-new
+```
+Finally restart the server
+```
+systemctl daemon-reload 
+systemctl restart etcd
+
