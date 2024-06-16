@@ -38,12 +38,17 @@ The CA uses its own private key to sign the requesting company's website. Then C
 We can encrypt with either of keys and decrypt with the other. But, it is recommended to encrypt with public and decrypt with private.
 
 Public Key Files:
+
 *.crt, *pem
+
 server.crt, server.pem,(server) 
+
 client.crt and client.pem (client)
 
 Private Key Files:
+
 server.key, server-key.pem (Server)
+
 client.key, client-key.pem (Client)
 
 
