@@ -13,3 +13,8 @@ Here, First private key is generated for the user admin, then signing certificat
 <img width="959" alt="image" src="https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/b3f885ed-a3b0-42c1-906b-9fbd826bec62">
 
 
+```
+openssl x509 -in <pathof the public certificate> -text
+```
+With this we can view the public key and Issuer and to whom and alternative names is available
+
