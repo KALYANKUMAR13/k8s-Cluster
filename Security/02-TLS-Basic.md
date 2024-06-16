@@ -33,4 +33,17 @@ The client and server use the symmetric session key to encrypt and decrypt the d
 
 <img width="950" alt="image" src="https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/b34ddb77-184d-418c-b71d-932937c022de">
 
-The CA uses its own private key to sign the requesting company's website. Then CA sends his public key(which used to sign the company's website) to all browsers, 
+The CA uses its own private key to sign the requesting company's website. Then CA verifies his public key of the company.
+
+We can encrypt with either of keys and decrypt with the other. But, it is recommended to encrypt with public and decrypt with private.
+
+Public Key Files:
+*.crt, *pem
+server.crt, server.pem,(server) 
+client.crt and client.pem (client)
+
+Private Key Files:
+server.key, server-key.pem (Server)
+client.key, client-key.pem (Client)
+
+
