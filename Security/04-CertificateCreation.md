@@ -8,7 +8,8 @@ Sign Ceritificate -> It is signed by its own private key(ca.key)
 
 <img width="956" alt="image" src="https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/c111cbad-ba02-4b84-b508-588597af6c0d">
 
-Here, First private key is generated for the user admin, then public key and then Certificate for the admin user , so that admin have access to the cluster ->admin.csr(file name)
+
+Here, First private key is generated for the user admin, then signing certificate and then public ceti admin user. The signing certificate will have the name of the owner
 <img width="959" alt="image" src="https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/b3f885ed-a3b0-42c1-906b-9fbd826bec62">
 
 
