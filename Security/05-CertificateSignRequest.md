@@ -23,3 +23,10 @@ spec:
   - client auth
 
 ```  
+
+
+The below command is used to get the public certificate after approved
+```
+ kubectl get csr akshay -o jsonpath='{.status.certificate}' 
+| base64 --decode > my-cert.crt
+```
