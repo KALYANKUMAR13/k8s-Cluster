@@ -4,3 +4,8 @@ With out providing the account name for the image repo, that comes under the lib
 
 
 To accessing and deploying the private repo from registries,like dockerhib, ecr,gcr, acr. We are creating a secret kind and storing the credentials on it
+
+
+We can implement security in pod level and container level to 
+
+But if we implemented both, security on container is override by the pod.
