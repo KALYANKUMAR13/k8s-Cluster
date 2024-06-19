@@ -9,3 +9,6 @@ First, we are creating a virtual cable, then attach to particualr network with i
 When we disconnect one end, the other gets disconnected.
 
 ![image](https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/1087a58a-4c23-40c6-ab3f-2fc2e5d10783)
+
+
+![image](https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/cbb1690a-8982-43c5-9c0d-d4be39fde4c6)
