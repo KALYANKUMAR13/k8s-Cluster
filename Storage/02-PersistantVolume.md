@@ -11,3 +11,5 @@ MountBindinf with host path is not recommended because, Data in one node can't b
 
 
 Persistent Volume Cliam : Every PVC is bound to single PV
+
+After a PVC deletes, that particular PV can't attach to another PVC directly. The data claimed from PVC is still be availiable. So We need to clean up the data or reclaim it. Then we can bound the PV to any PVC
