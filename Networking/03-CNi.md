@@ -9,6 +9,8 @@ CNI Plugins:
 
 CNI plugins are responsible for setting up the network for containers.
 They handle tasks like IP address allocation, route setting, and DNS configuration.
+containerd cri-o
+<img width="727" alt="image" src="https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/808f5c75-1d3b-4b3c-942c-317c210a2c33">
 
 
 Network Configuration:
