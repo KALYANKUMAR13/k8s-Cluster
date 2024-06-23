@@ -7,7 +7,7 @@ cat /etc/*-release
 ```
 Provides the distribution (linux, or)
 
-3.  Download the correct apt repo, v.29 or 1.30. If we need any releases from v1.29.2, download v1.29. and while executing run the correct version
+3.  Download the correct apt repo, v.29 or 1.30. If we need any releases from v1.29.2, download v1.29. and while executing run the correct version. install on all nodes
 
 ```
 sudo apt-get install -y kubelet=1.29.0-1.1 kubeadm=1.29.0-1.1 kubectl=1.29.0-1.1
