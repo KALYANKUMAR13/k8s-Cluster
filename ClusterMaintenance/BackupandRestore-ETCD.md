@@ -75,6 +75,7 @@ For copying from the control plane to the basenode=> which have access to all th
 
 From the base node, 
 ```
+
 scp cluster1-controlplane:/opt/cluster1.db /opt/cluster1.db
 scp <nodeName>:<insisdeNOdeLocation> <baseSystemLocation
 ```
