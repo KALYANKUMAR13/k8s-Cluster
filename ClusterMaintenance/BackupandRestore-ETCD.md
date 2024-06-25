@@ -73,9 +73,9 @@ systemctl restart etcd
 
 For copying from the control plane to the basenode=> which have access to all the clusters.   Taks a copy in the controlplane 
 
-From the base node, 
-```
+From the base node,
 
+```
 scp cluster1-controlplane:/opt/cluster1.db /opt/cluster1.db
 scp <nodeName>:<insisdeNOdeLocation> <baseSystemLocation
 ```
