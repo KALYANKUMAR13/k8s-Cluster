@@ -86,8 +86,11 @@ scp <nodeName>:<insisdeNOdeLocation> <baseSystemLocation
 
 
 ----------------------------------------------------------------------------------------------
+
+
+
 Basically we should be in the machine where we have  that particular file
 ```
  scp /opt/cluster2.db etcd-server:/root
- ```
+```
 
