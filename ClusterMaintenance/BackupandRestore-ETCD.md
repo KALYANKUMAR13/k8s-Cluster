@@ -77,6 +77,10 @@ From the base node,
 
 ```
 scp cluster1-controlplane:/opt/cluster1.db /opt/cluster1.db
+```
+Nextone 
+
+```
 scp <nodeName>:<insisdeNOdeLocation> <baseSystemLocation
 ```
 
