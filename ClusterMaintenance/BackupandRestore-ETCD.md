@@ -55,7 +55,8 @@ Directly Updating on the etcd server
 ```
 ETCDCTL_API=3 etcdctl --endpoints=https://192.4.55.15:2379 --cacert=/etc/etcd/pki/ca.pem --cert=/etc/etcd/pki/etcd.pem --key=/etc/etcd/pki/etcd-key.pem snapshot restore /root/cluster2.db --data-dir /var/lib/etcd-data-new
 ```       
-In the above ine we have restoring the etcd cluster.(Restorinbg etcd cluster)
+
+In the above one, we have restoring the etcd cluster.(Restorinbg etcd cluster) Here we add the --data-drive, while in previous methiod, we won't add it 
 
 
 Step 3: Update the systemd service unit file for etcdby running vi /etc/systemd/system/etcd.service and add the new value for data-dir:
