@@ -11,3 +11,10 @@ list starts with - , while dictionary starts with normally
 
 
 <img width="958" alt="image" src="https://github.com/KALYANKUMAR13/k8s-Cluster/assets/35223898/76fd4504-2c3d-4020-9654-5bd40bf7838c">
+
+
+```
+ k get pv --sort-by=.spec.capacity.storage
+
+k get pv -o=jsonpath='{.items[*].spec.capacity.storage}'
+```
