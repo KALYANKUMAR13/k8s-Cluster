@@ -8,5 +8,7 @@
 13. ETCD backup and rstore 11%
 14. Create a new user named. Private key is at location /root.newuser.csr. Make use of it - 7%
 15. Creata a pod and expose it internally with a service and use a image for lookup and save the result. 4%
-
+16. Pod is not running because it does not have toleration, whil node had. 7%
+17. Create rs, they is a pod already running. Make desired rs count. 4%
+18. 
    
