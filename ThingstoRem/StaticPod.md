@@ -10,5 +10,18 @@ journalctl -xe
 cat /etc/kubernetes/kubelet.conf
 systemctl restart kubelet
 ```
-
+--------------------------------------------
 Dns lookup , go inside the busy box container and nslookup the service.
+
+-----------------------------------------------
+
+To know which components of the controlplane are installed through kubeadm. check /etc/kubernetes/manifests/files of component
+
+Command to check anything in the running by system service  
+```
+find /etc/systemd/system/ | grep kube
+```
+This gives the services installed on its own.
+
+Usually corendns and network add on is deployed as deployment in kube-system namespace.
+
