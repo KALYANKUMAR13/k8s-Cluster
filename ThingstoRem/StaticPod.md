@@ -25,3 +25,20 @@ This gives the services installed on its own.
 
 Usually corendns and network add on is deployed as deployment in kube-system namespace.
 
+--------------------------------------------
+
+nslookup is dnsutils package 
+nslookup => used to query the DNS name or its IP address mapping. 
+
+telnet is a network protocol used to provide a command-line interface for communication with a remote device or server
+
+-----------------------------------------------
+
+
+For serviceaccount 
+
+```
+kubeclt auth can-i create pods --as system:serviceaccount:<Namespace>:<serviceaccountName>
+kubectl auth can-i get pods --as system:serviceaccount:ops:gitops -n <nameSpace>
+```
+
