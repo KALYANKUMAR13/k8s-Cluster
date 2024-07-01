@@ -42,3 +42,19 @@ kubeclt auth can-i create pods --as system:serviceaccount:<Namespace>:<serviceac
 kubectl auth can-i get pods --as system:serviceaccount:ops:gitops -n <nameSpace>
 ```
 
+-----------------------------------------------------------------
+
+When ever, we want the continaerID , First see the pod is scheduled on which node and ssh into a particular node. Then view the running containers by the following commands
+
+```
+crictl ps
+```
+
+Recreate a container, do like docker with crictl command
+
+To get the event of the pod,,
+```
+kubectl get events --field-selector involedObject.name=<podName>
+```
+
+
