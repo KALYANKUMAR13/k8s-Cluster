@@ -56,5 +56,9 @@ To get the event of the pod,,
 ```
 kubectl get events --field-selector involedObject.name=<podName>
 ```
+-------------
 
+```
+k exec -it <podName> apt update
+k exec -it <podName> -- sh -c "apt install telnet"
 
