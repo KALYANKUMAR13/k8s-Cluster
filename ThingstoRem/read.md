@@ -1,5 +1,5 @@
 
-Different methods
+Different methods for container orchestration 
 
 Apache's Mesos   -  Hasicorp's Nomad
 
