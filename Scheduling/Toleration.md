@@ -1,7 +1,7 @@
 If the node is **tained**, we can't able to deploy on particaulr node, 
 But, If we have added **tolerations** in our manifest, it can be deployed to paricular node. 
 
-Here, if tolerations are added, it is not placed in particular node. it can be placed to other nodes as wel, it dependes on other nodes that are availiable(Total Nodes) and Schedular.
+Here, if tolerations are added, it is not placed in a particular node. it can be placed to other nodes as well, it depends on other nodes that are available (Total Nodes) and Scheduler.
 
 Taint and tolerations for only **RESTRICTING**
 
