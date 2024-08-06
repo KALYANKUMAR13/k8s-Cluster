@@ -40,6 +40,6 @@ Total master nodes/2 Plus 1.
 
 
 
-Write is completed, when it can send the data on majority of the nodes,Total master nodes/2 Plus 1.
+Write is completed, when it can send the data on the **majority of the nodes**,Total master nodes/2 Plus 1.
 
 
